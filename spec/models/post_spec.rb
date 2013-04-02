@@ -1,5 +1,8 @@
 require 'spec_helper'
 
 describe Post do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "creates 10 sample posts" do
+    10.times { FactoryGirl.create(:post) }
+    expect(Post.count).to eq(10)
+  end
 end
