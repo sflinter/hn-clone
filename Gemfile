@@ -23,6 +23,7 @@ end
 gem 'jquery-rails'
 
 group :test, :development do
+  gem 'haml-rails', '>= 0.3.4'
   gem "rspec-rails", "~> 2.0"
 end
 
