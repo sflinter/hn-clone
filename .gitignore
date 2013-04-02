@@ -1,0 +1,14 @@
+.DS_Store
+.rspec
+.sass-cache
+*.log
+*.rbc
+*.sassc
+**.orig
+**.bak
+/.bundle
+/log/*
+/coverage/
+/spec/tmp/*
+/tmp/*
+/vendor/bundle
