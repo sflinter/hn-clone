@@ -3,8 +3,10 @@ require 'spec_helper'
 describe "posts/index" do
   it "displays 10 random posts" do
     10.times { FactoryGirl.create(:post) }
-    render
+    expect(Post.count).to eq(10)
 
-    expect(rendered).to include("http://www.example-10.com")
+    assign(:posts, Post.all)
+    render
+    expect(rendered).to include(Post.first.title)
   end
 end
