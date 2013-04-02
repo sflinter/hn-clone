@@ -12,3 +12,4 @@
 /spec/tmp/*
 /tmp/*
 /vendor/bundle
+/db/development.sqlite3
