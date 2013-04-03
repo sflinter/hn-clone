@@ -1,5 +1,3 @@
 %li
-  = link_to post.title, post.url
-  (votes
-  = post.votes
-  )
+  #{link_to post.title, post.url} (#{post.votes} votes)
+  =button_to "Up Vote", post, method: :put
