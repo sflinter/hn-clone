@@ -9,4 +9,13 @@ describe "posts/index" do
     render
     expect(rendered).to include(Post.first.title)
   end
+
+  it "displays posts ordered by number of votes" do
+    (1..5).each { |n| FactoryGirl.create(:post, :votes => n) }
+    expect(Post.count).to eq(5)
+
+    assign(:posts, Post.ordered_by_votes)
+    render
+    expect(rendered).to include(Post.first.title)
+  end
 end

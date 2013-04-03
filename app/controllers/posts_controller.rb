@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.all
+    @posts = Post.ordered_by_votes
   end
 end
