@@ -1,3 +1,3 @@
 %li
-  #{link_to post.title, post.url} (#{post.votes} votes)
+  #{link_to post.title, post.url} (#{post.votes} votes) (Submitted by #{post.poster})
   =button_to "Up Vote", post, method: :put

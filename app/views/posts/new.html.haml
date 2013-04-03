@@ -1,0 +1,14 @@
+%h1 Submit News
+
+= form_tag posts_path do
+  = field_set_tag do
+    = label_tag :title, "Title:"
+    = text_field_tag :title
+    .clear
+    = label_tag :url, "URL:"
+    = text_field_tag :url
+    .clear
+    = label_tag :poster, "Username:"
+    = text_field_tag :poster
+    .clear
+    = submit_tag "Submit News"
