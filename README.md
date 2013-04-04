@@ -14,7 +14,8 @@ This is an _extremely_ simple HackerNews clone.
 
 To install:
 
-```$ bundle
+```
+$ bundle
 $ rake db:migrate
 ```
 
